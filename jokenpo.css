@@ -86,6 +86,7 @@ h1 {
 }
 
 .hand {
+    filter: drop-shadow(0 5px 15px rgba(0,0,0,0.3));
     font-size: 4rem;
     transition: transform 0.1s;
 }
@@ -176,3 +177,4 @@ h1 {
 .rock::after { content: "✊"; }
 .paper::after { content: "✋"; }
 .scissors::after { content: "✌️"; }
+
