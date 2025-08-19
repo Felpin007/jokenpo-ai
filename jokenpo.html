@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokenpô AI - Neural Bot</title>
+    <link rel="stylesheet" href="jokenpo.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Neural Jokenpô</h1>
+        <div class="ai-status" id="aiStatus">Iniciando análise neural...</div>
+
+        <div class="scoreboard">
+            <div class="score-box">
+                <span>VOCÊ</span>
+                <div id="userScore">0</div>
+            </div>
+            <div class="score-box">
+                <span>I.A.</span>
+                <div id="botScore">0</div>
+            </div>
+        </div>
+
+        <div class="battle-area" id="battleArea">
+            <div class="hand user rock" id="userHand"></div>
+            <div class="hand bot rock" id="botHand"></div>
+        </div>
+
+        <div class="result-msg" id="resultMsg">Faça sua jogada</div>
+
+        <div class="controls">
+            <button class="btn-move rock" onclick="play('rock')"></button>
+            <button class="btn-move paper" onclick="play('paper')"></button>
+            <button class="btn-move scissors" onclick="play('scissors')"></button>
+        </div>
+
+        <button class="btn-reset" onclick="resetGame()">Reiniciar Memória da IA</button>
+    </div>
+
+    <script src="jokenpo.js"></script>
+</body>
+</html>
