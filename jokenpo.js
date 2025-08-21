@@ -100,6 +100,7 @@ function play(userMove) {
 }
 
 function determineWinner(u, b) {
+    // Simple logic to determine winner based on classic rules
     if (u === b) return 'draw';
     if ((u === 'rock' && b === 'scissors') ||
         (u === 'paper' && b === 'rock') ||
@@ -144,3 +145,4 @@ function resetGame() {
     document.getElementById('userHand').className = 'hand user rock';
     document.getElementById('botHand').className = 'hand bot rock';
 }
+
