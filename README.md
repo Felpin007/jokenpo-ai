@@ -19,4 +19,4 @@ O jogo utiliza um algoritmo de reconhecimento de padrões (ex: Cadeias de Markov
 
 ## Como Jogar
 
-Abra o arquivo `jokenpo.html`.
+Abra o arquivo `index.html`.
